@@ -1,0 +1,359 @@
+不加入相位值，采用归一化，mse效果如下：
+x shape:  (9168, 12, 72, 1) , y shape:  (9168, 1, 72, 1)
+StandardScaler mean: 3.806612988154794, std: 7.791648984595828
+(19, 180, 72)
+d:\77829\School\STFGNN\STFGNN-main\STFGNN-pytorch\data\dataset\stfgnn_dataset.py:25: RuntimeWarning: invalid value encountered in divide
+  return (a-mu)/std
+The calculation of time series is done!
+Total route number:  72
+Sparsity of adj:  0.013888888888888888
+The weighted matrix of temporal graph is generated!
+The shape of localized adjacency matrix: (288, 288)
+begin training
+| end of epoch   1 | time: 16.00s | train_loss 662252.3265 | valid mse 5116.2700
+| end of epoch   2 | time: 10.72s | train_loss 7096.1131 | valid mse 27.4700
+| end of epoch   3 | time: 11.30s | train_loss 59.5930 | valid mse 24.5578
+D:\software\anaconda3\envs\pytorchCUDA11.7\Lib\site-packages\numpy\lib\function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+D:\software\anaconda3\envs\pytorchCUDA11.7\Lib\site-packages\numpy\lib\function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+| end of epoch   4 | time: 11.18s | train_loss 53.6644 | valid mse 30.4409
+| end of epoch   5 | time: 11.21s | train_loss 2310.1691 | valid mse 95.7218
+| end of epoch   6 | time: 11.56s | train_loss 47.9113 | valid mse 30.2913
+| end of epoch   7 | time: 11.24s | train_loss 46.5300 | valid mse 30.2479
+| end of epoch   8 | time: 10.56s | train_loss 46.4268 | valid mse 30.2543
+| end of epoch   9 | time: 10.51s | train_loss 46.4366 | valid mse 30.3388
+| end of epoch  10 | time: 10.63s | train_loss 183.8512 | valid mse 30.4337
+| end of epoch  11 | time: 10.51s | train_loss 46.4715 | valid mse 30.4598
+| end of epoch  12 | time: 10.61s | train_loss 46.5128 | valid mse 30.3457
+| end of epoch  13 | time: 11.19s | train_loss 46.5764 | valid mse 30.2195
+| end of epoch  14 | time: 11.82s | train_loss 46.4843 | valid mse 30.4887
+| end of epoch  15 | time: 11.74s | train_loss 46.8084 | valid mse 30.1597
+| end of epoch  16 | time: 11.35s | train_loss 46.3538 | valid mse 30.2936
+| end of epoch  17 | time: 11.31s | train_loss 46.3780 | valid mse 30.4313
+| end of epoch  18 | time: 11.23s | train_loss 46.3457 | valid mse 30.0609
+| end of epoch  19 | time: 10.59s | train_loss 46.3824 | valid mse 30.1205
+| end of epoch  20 | time: 10.64s | train_loss 46.3422 | valid mse 30.1355
+| end of epoch  21 | time: 10.69s | train_loss 46.3423 | valid mse 30.1822
+| end of epoch  22 | time: 10.26s | train_loss 46.3566 | valid mse 30.2421
+| end of epoch  23 | time: 10.24s | train_loss 46.3280 | valid mse 30.2091
+early stop at epoch: 0023
+MAE  :
+horizon-0  :  4.874818325042725
+all  :  4.874818325042725
+MSE  :
+horizon-0  :  68.91429901123047
+all  :  68.91429901123047
+RMSE  :
+horizon-0  :  8.301464080810547
+all  :  8.301464080810547
+masked_MAPE  :
+horizon-0  :  79.77980375289917
+all  :  79.77980375289917
+StemGNN_MAPE  :
+horizon-0  :  308.21120192265414
+all  :  308.21120192265414
+PCC  :
+horizon-0  :  0.4655392154360103
+all  :  0.4655392154360103
+node_wise_PCC  :
+horizon-0  :  0.17926889657974243
+all  :  0.17926889657974243
+x shape:  (2328, 12, 72, 1) , y shape:  (2328, 1, 72, 1)
+StandardScaler mean: 0.7212675199059713, std: 2.1752822297440777
+(4, 180, 72)
+The calculation of time series is done!
+Total route number:  72
+Sparsity of adj:  0.013888888888888888
+The weighted matrix of temporal graph is generated!
+The shape of localized adjacency matrix: (288, 288)
+begin training
+| end of epoch   1 | time:  3.06s | train_loss 52052.8795 | valid mse 213183.5625
+| end of epoch   2 | time:  2.85s | train_loss 29768.8700 | valid mse 82320.5000
+| end of epoch   3 | time:  2.86s | train_loss 8042.7752 | valid mse 16206.7314
+| end of epoch   4 | time:  2.88s | train_loss 5465.5197 | valid mse 86623.3359
+| end of epoch   5 | time:  2.81s | train_loss 2077.2982 | valid mse 1625.6926
+| end of epoch   6 | time:  2.88s | train_loss 417.5624 | valid mse 2069.2727
+| end of epoch   7 | time:  2.85s | train_loss 130.2660 | valid mse 238.3038
+| end of epoch   8 | time:  2.71s | train_loss 77.3061 | valid mse 152.3599
+| end of epoch   9 | time:  2.65s | train_loss 17.8340 | valid mse 950.7627
+| end of epoch  10 | time:  2.69s | train_loss 26.0530 | valid mse 388.1933
+| end of epoch  11 | time:  2.69s | train_loss 10.1740 | valid mse 134.3244
+| end of epoch  12 | time:  2.68s | train_loss 9.0000 | valid mse 41.3636
+| end of epoch  13 | time:  2.68s | train_loss 5.6607 | valid mse 57.0508
+| end of epoch  14 | time:  2.78s | train_loss 3.1660 | valid mse 40.8821
+| end of epoch  15 | time:  2.76s | train_loss 5.0101 | valid mse 25.1121
+| end of epoch  16 | time:  2.70s | train_loss 3.9879 | valid mse 56.8966
+| end of epoch  17 | time:  2.66s | train_loss 3.0597 | valid mse 57.0018
+| end of epoch  18 | time:  2.68s | train_loss 3.3965 | valid mse 11629.3340
+| end of epoch  19 | time:  2.71s | train_loss 73.5725 | valid mse 56.9765
+| end of epoch  20 | time:  2.75s | train_loss 3.0354 | valid mse 56.8590
+| end of epoch  21 | time:  2.72s | train_loss 3.0222 | valid mse 56.5594
+| end of epoch  22 | time:  2.71s | train_loss 3.0362 | valid mse 56.5950
+| end of epoch  23 | time:  2.75s | train_loss 3.0245 | valid mse 56.9266
+| end of epoch  24 | time:  2.72s | train_loss 3.0200 | valid mse 56.9200
+| end of epoch  25 | time:  2.90s | train_loss 3.0386 | valid mse 57.3168
+| end of epoch  26 | time:  2.80s | train_loss 3.0238 | valid mse 56.9009
+| end of epoch  27 | time:  2.84s | train_loss 3.2029 | valid mse 58.3718
+| end of epoch  28 | time:  2.74s | train_loss 3.1733 | valid mse 57.6119
+| end of epoch  29 | time:  2.69s | train_loss 3.0090 | valid mse 56.6951
+| end of epoch  30 | time:  2.76s | train_loss 3.0334 | valid mse 56.8025
+| end of epoch  31 | time:  2.73s | train_loss 3.0300 | valid mse 57.0913
+| end of epoch  32 | time:  2.74s | train_loss 3.0131 | valid mse 203.0082
+| end of epoch  33 | time:  2.80s | train_loss 6.2811 | valid mse 31.6727
+| end of epoch  34 | time:  2.79s | train_loss 3.5449 | valid mse 57.3313
+| end of epoch  35 | time:  2.66s | train_loss 3.0355 | valid mse 57.1741
+early stop at epoch: 0035
+MAE  :
+horizon-0  :  5.301469802856445
+all  :  5.301469802856445
+MSE  :
+horizon-0  :  102.10881042480469
+all  :  102.10881042480469
+RMSE  :
+horizon-0  :  10.104890823364258
+all  :  10.104890823364258
+masked_MAPE  :
+horizon-0  :  70.61888575553894
+all  :  70.61888575553894
+StemGNN_MAPE  :
+horizon-0  :  286.502116002531
+all  :  286.502116002531
+PCC  :
+horizon-0  :  0.36819263513976075
+all  :  0.36819263513976075
+node_wise_PCC  :
+horizon-0  :  0.09900413453578949
+all  :  0.09900413453578949
+x shape:  (2328, 12, 72, 1) , y shape:  (2328, 1, 72, 1)
+StandardScaler mean: 0.6049921237749322, std: 1.7494956921251785
+(4, 180, 72)
+The calculation of time series is done!
+Total route number:  72
+Sparsity of adj:  0.013888888888888888
+The weighted matrix of temporal graph is generated!
+The shape of localized adjacency matrix: (288, 288)
+begin training
+| end of epoch   1 | time:  3.25s | train_loss 35973.8232 | valid mse 71599.7266
+| end of epoch   2 | time:  2.93s | train_loss 32097.3305 | valid mse 8236.2949
+| end of epoch   3 | time:  2.92s | train_loss 11009.9192 | valid mse 5750.4751
+| end of epoch   4 | time:  2.80s | train_loss 3361.2573 | valid mse 820.4521
+| end of epoch   5 | time:  2.97s | train_loss 1884.0338 | valid mse 306.9813
+| end of epoch   6 | time:  2.84s | train_loss 380.6124 | valid mse 151.9756
+| end of epoch   7 | time:  2.91s | train_loss 62.2678 | valid mse 347.8932
+| end of epoch   8 | time:  2.88s | train_loss 84.4034 | valid mse 1045.1664
+| end of epoch   9 | time:  2.91s | train_loss 206.0365 | valid mse 16.9984
+| end of epoch  10 | time:  2.69s | train_loss 104.3818 | valid mse 26.2231
+| end of epoch  11 | time:  2.66s | train_loss 33.9440 | valid mse 96.6983
+| end of epoch  12 | time:  2.73s | train_loss 13.7705 | valid mse 82.4114
+| end of epoch  13 | time:  2.75s | train_loss 9.9385 | valid mse 11.5257
+| end of epoch  14 | time:  2.66s | train_loss 6.2232 | valid mse 112.8529
+| end of epoch  15 | time:  2.64s | train_loss 6.2831 | valid mse 5.6003
+| end of epoch  16 | time:  2.62s | train_loss 6.8642 | valid mse 8.0806
+| end of epoch  17 | time:  2.68s | train_loss 1.5664 | valid mse 3.7632
+| end of epoch  18 | time:  2.72s | train_loss 1.7275 | valid mse 3.9454
+| end of epoch  19 | time:  2.72s | train_loss 1.0202 | valid mse 5.5295
+| end of epoch  20 | time:  2.69s | train_loss 1.5541 | valid mse 4.2050
+| end of epoch  21 | time:  2.69s | train_loss 1.8289 | valid mse 3.2052
+| end of epoch  22 | time:  2.71s | train_loss 1.1189 | valid mse 2.2750
+| end of epoch  23 | time:  2.78s | train_loss 4.1103 | valid mse 6.9551
+| end of epoch  24 | time:  2.76s | train_loss 1.3588 | valid mse 2.2762
+| end of epoch  25 | time:  2.69s | train_loss 1.3986 | valid mse 1.8447
+| end of epoch  26 | time:  2.66s | train_loss 0.8446 | valid mse 1.8197
+| end of epoch  27 | time:  2.67s | train_loss 0.8111 | valid mse 5.1430
+| end of epoch  28 | time:  2.77s | train_loss 0.7727 | valid mse 2.1192
+| end of epoch  29 | time:  2.73s | train_loss 0.6968 | valid mse 1.4952
+| end of epoch  30 | time:  2.76s | train_loss 0.5946 | valid mse 2.5588
+| end of epoch  31 | time:  2.73s | train_loss 0.5654 | valid mse 1.2885
+| end of epoch  32 | time:  2.78s | train_loss 0.4805 | valid mse 1.1671
+| end of epoch  33 | time:  2.72s | train_loss 0.4780 | valid mse 1.1198
+| end of epoch  34 | time:  2.77s | train_loss 0.4304 | valid mse 1.0328
+| end of epoch  35 | time:  2.71s | train_loss 0.4607 | valid mse 1.5083
+| end of epoch  36 | time:  2.72s | train_loss 0.4962 | valid mse 1.1584
+| end of epoch  37 | time:  2.76s | train_loss 0.4028 | valid mse 0.9304
+| end of epoch  38 | time:  2.66s | train_loss 0.5735 | valid mse 1.4362
+| end of epoch  39 | time:  2.74s | train_loss 0.6902 | valid mse 5.2940
+| end of epoch  40 | time:  2.80s | train_loss 0.6183 | valid mse 3.1730
+| end of epoch  41 | time:  2.72s | train_loss 0.5103 | valid mse 1.0539
+| end of epoch  42 | time:  2.70s | train_loss 0.4604 | valid mse 1.0357
+| end of epoch  43 | time:  2.89s | train_loss 0.4515 | valid mse 1.0009
+| end of epoch  44 | time:  2.86s | train_loss 0.4021 | valid mse 1.3479
+| end of epoch  45 | time:  2.91s | train_loss 0.4128 | valid mse 1.0834
+| end of epoch  46 | time:  2.93s | train_loss 0.3866 | valid mse 0.8714
+| end of epoch  47 | time:  2.86s | train_loss 0.3820 | valid mse 1.0089
+| end of epoch  48 | time:  2.94s | train_loss 0.4207 | valid mse 0.9931
+| end of epoch  49 | time:  2.90s | train_loss 0.3830 | valid mse 0.9809
+| end of epoch  50 | time:  2.94s | train_loss 0.3622 | valid mse 0.8700
+| end of epoch  51 | time:  2.88s | train_loss 0.3537 | valid mse 0.8011
+| end of epoch  52 | time:  2.93s | train_loss 0.3504 | valid mse 0.8450
+| end of epoch  53 | time:  2.98s | train_loss 0.4662 | valid mse 1.1199
+| end of epoch  54 | time:  2.73s | train_loss 0.3944 | valid mse 1.4502
+| end of epoch  55 | time:  2.85s | train_loss 0.4962 | valid mse 1.3181
+| end of epoch  56 | time:  2.94s | train_loss 0.3857 | valid mse 1.2230
+| end of epoch  57 | time:  2.79s | train_loss 0.3811 | valid mse 2.3834
+| end of epoch  58 | time:  2.70s | train_loss 0.3900 | valid mse 1.4227
+| end of epoch  59 | time:  2.64s | train_loss 3.7088 | valid mse 3.8379
+| end of epoch  60 | time:  2.72s | train_loss 0.4838 | valid mse 1.3423
+| end of epoch  61 | time:  2.77s | train_loss 0.4045 | valid mse 1.0649
+| end of epoch  62 | time:  2.74s | train_loss 0.4083 | valid mse 1.2743
+| end of epoch  63 | time:  2.74s | train_loss 0.3600 | valid mse 0.8574
+| end of epoch  64 | time:  2.76s | train_loss 0.4026 | valid mse 0.9637
+| end of epoch  65 | time:  2.80s | train_loss 1.8784 | valid mse 4.9117
+| end of epoch  66 | time:  2.70s | train_loss 1.0869 | valid mse 5.1835
+| end of epoch  67 | time:  2.78s | train_loss 0.7171 | valid mse 2.5794
+| end of epoch  68 | time:  2.74s | train_loss 0.4313 | valid mse 1.0938
+| end of epoch  69 | time:  2.76s | train_loss 0.4527 | valid mse 1.1064
+| end of epoch  70 | time:  2.65s | train_loss 0.4682 | valid mse 1.1149
+| end of epoch  71 | time:  2.81s | train_loss 0.3813 | valid mse 0.9446
+early stop at epoch: 0071
+MAE  :
+horizon-0  :  0.4521457850933075
+all  :  0.4521457850933075
+MSE  :
+horizon-0  :  0.5235572457313538
+all  :  0.5235572457313538
+RMSE  :
+horizon-0  :  0.7235725522041321
+all  :  0.7235725522041321
+masked_MAPE  :
+horizon-0  :  44.27182674407959
+all  :  44.27182674407959
+StemGNN_MAPE  :
+horizon-0  :  307.916636140446
+all  :  307.916636140446
+PCC  :
+horizon-0  :  0.8871745986487795
+all  :  0.8871745986487795
+node_wise_PCC  :
+horizon-0  :  0.40957111120224
+all  :  0.40957111120224
+x shape:  (2328, 12, 72, 1) , y shape:  (2328, 1, 72, 1)
+StandardScaler mean: 0.5029128500667216, std: 1.3347755526126923
+(4, 180, 72)
+The calculation of time series is done!
+Total route number:  72
+Sparsity of adj:  0.013888888888888888
+The weighted matrix of temporal graph is generated!
+The shape of localized adjacency matrix: (288, 288)
+begin training
+| end of epoch   1 | time:  3.05s | train_loss 12469.2570 | valid mse 7510.1304
+| end of epoch   2 | time:  2.86s | train_loss 14962.1235 | valid mse 297778.1250
+| end of epoch   3 | time:  2.79s | train_loss 22368.0994 | valid mse 12588.8232
+| end of epoch   4 | time:  2.77s | train_loss 3766.1403 | valid mse 1736.2821
+| end of epoch   5 | time:  2.84s | train_loss 670.8287 | valid mse 991.6562
+| end of epoch   6 | time:  2.76s | train_loss 152.1613 | valid mse 111.4390
+| end of epoch   7 | time:  2.83s | train_loss 42.4928 | valid mse 471.1035
+| end of epoch   8 | time:  2.77s | train_loss 31.1387 | valid mse 2.9381
+| end of epoch   9 | time:  2.95s | train_loss 15.6204 | valid mse 25.8523
+| end of epoch  10 | time:  2.96s | train_loss 7.4933 | valid mse 2.8817
+| end of epoch  11 | time:  3.02s | train_loss 4.6140 | valid mse 66.8897
+| end of epoch  12 | time:  2.92s | train_loss 9.4582 | valid mse 5.9971
+| end of epoch  13 | time:  2.92s | train_loss 3.0425 | valid mse 4.6167
+| end of epoch  14 | time:  2.94s | train_loss 8.2806 | valid mse 6.8065
+| end of epoch  15 | time:  2.85s | train_loss 4.5470 | valid mse 1.8519
+| end of epoch  16 | time:  2.92s | train_loss 1.6710 | valid mse 1.5472
+| end of epoch  17 | time:  2.84s | train_loss 2.5920 | valid mse 2.9611
+| end of epoch  18 | time:  2.92s | train_loss 7.0163 | valid mse 2.9363
+| end of epoch  19 | time:  2.90s | train_loss 4.6387 | valid mse 1.6539
+| end of epoch  20 | time:  2.79s | train_loss 3.2572 | valid mse 6.1131
+| end of epoch  21 | time:  2.88s | train_loss 3.8215 | valid mse 2.5502
+| end of epoch  22 | time:  2.88s | train_loss 1.0842 | valid mse 3.2652
+| end of epoch  23 | time:  2.87s | train_loss 1.8112 | valid mse 2.0973
+| end of epoch  24 | time:  2.78s | train_loss 4.1553 | valid mse 2.0258
+| end of epoch  25 | time:  2.90s | train_loss 4.0635 | valid mse 3.0260
+| end of epoch  26 | time:  2.92s | train_loss 1.3199 | valid mse 1.9728
+| end of epoch  27 | time:  2.85s | train_loss 1.4910 | valid mse 2.0383
+| end of epoch  28 | time:  2.98s | train_loss 4.0277 | valid mse 2.0468
+| end of epoch  29 | time:  2.91s | train_loss 1.0367 | valid mse 1.6664
+| end of epoch  30 | time:  2.70s | train_loss 0.8858 | valid mse 1.9261
+| end of epoch  31 | time:  2.69s | train_loss 1.2644 | valid mse 1.8381
+| end of epoch  32 | time:  2.69s | train_loss 1.1918 | valid mse 2.7437
+| end of epoch  33 | time:  2.74s | train_loss 1.2038 | valid mse 2.3756
+| end of epoch  34 | time:  2.70s | train_loss 0.8012 | valid mse 1.7165
+| end of epoch  35 | time:  2.72s | train_loss 1.5074 | valid mse 1.4980
+| end of epoch  36 | time:  2.71s | train_loss 0.9664 | valid mse 1.2587
+| end of epoch  37 | time:  2.69s | train_loss 0.8557 | valid mse 1.9238
+| end of epoch  38 | time:  2.71s | train_loss 0.8582 | valid mse 2.8929
+| end of epoch  39 | time:  2.71s | train_loss 0.8798 | valid mse 2.4125
+| end of epoch  40 | time:  2.70s | train_loss 0.7938 | valid mse 1.5681
+| end of epoch  41 | time:  2.64s | train_loss 0.7531 | valid mse 3.1281
+| end of epoch  42 | time:  2.64s | train_loss 1.3850 | valid mse 3.7888
+| end of epoch  43 | time:  2.62s | train_loss 0.7846 | valid mse 1.3858
+| end of epoch  44 | time:  2.63s | train_loss 1.0072 | valid mse 1.4194
+| end of epoch  45 | time:  2.63s | train_loss 0.8644 | valid mse 1.1965
+| end of epoch  46 | time:  2.62s | train_loss 0.6350 | valid mse 1.2428
+| end of epoch  47 | time:  2.64s | train_loss 0.6023 | valid mse 1.0568
+| end of epoch  48 | time:  2.64s | train_loss 0.6731 | valid mse 1.1884
+| end of epoch  49 | time:  2.63s | train_loss 0.5890 | valid mse 1.3100
+| end of epoch  50 | time:  2.65s | train_loss 0.5258 | valid mse 0.9357
+| end of epoch  51 | time:  2.64s | train_loss 0.5284 | valid mse 1.0346
+| end of epoch  52 | time:  2.76s | train_loss 0.5279 | valid mse 1.0744
+| end of epoch  53 | time:  2.93s | train_loss 2.4680 | valid mse 1.8597
+| end of epoch  54 | time:  2.94s | train_loss 0.7078 | valid mse 1.1382
+| end of epoch  55 | time:  2.92s | train_loss 0.6230 | valid mse 1.1573
+| end of epoch  56 | time:  2.85s | train_loss 0.5799 | valid mse 1.1968
+| end of epoch  57 | time:  2.84s | train_loss 0.5173 | valid mse 0.9839
+| end of epoch  58 | time:  2.94s | train_loss 0.5093 | valid mse 1.1330
+| end of epoch  59 | time:  2.80s | train_loss 0.4952 | valid mse 1.1195
+| end of epoch  60 | time:  2.83s | train_loss 0.4981 | valid mse 1.1513
+| end of epoch  61 | time:  2.95s | train_loss 0.4917 | valid mse 1.0727
+| end of epoch  62 | time:  2.88s | train_loss 0.4843 | valid mse 1.0103
+| end of epoch  63 | time:  2.84s | train_loss 0.5214 | valid mse 0.8016
+| end of epoch  64 | time:  2.79s | train_loss 0.4727 | valid mse 1.0097
+| end of epoch  65 | time:  2.91s | train_loss 0.4554 | valid mse 0.8280
+| end of epoch  66 | time:  2.93s | train_loss 0.4746 | valid mse 0.8140
+| end of epoch  67 | time:  2.90s | train_loss 0.4884 | valid mse 1.0255
+| end of epoch  68 | time:  2.85s | train_loss 0.4363 | valid mse 0.8427
+| end of epoch  69 | time:  2.89s | train_loss 0.4061 | valid mse 0.7982
+| end of epoch  70 | time:  2.79s | train_loss 0.4072 | valid mse 0.8070
+| end of epoch  71 | time:  2.87s | train_loss 0.3854 | valid mse 0.7175
+| end of epoch  72 | time:  2.93s | train_loss 0.4357 | valid mse 0.7960
+| end of epoch  73 | time:  2.71s | train_loss 0.4246 | valid mse 0.6991
+| end of epoch  74 | time:  2.72s | train_loss 0.3561 | valid mse 0.7478
+| end of epoch  75 | time:  2.71s | train_loss 0.3905 | valid mse 0.8749
+| end of epoch  76 | time:  2.72s | train_loss 3.0965 | valid mse 0.6534
+| end of epoch  77 | time:  2.78s | train_loss 0.3693 | valid mse 0.6650
+| end of epoch  78 | time:  2.96s | train_loss 0.3524 | valid mse 0.6596
+| end of epoch  79 | time:  2.81s | train_loss 0.3332 | valid mse 0.6549
+| end of epoch  80 | time:  2.76s | train_loss 0.3359 | valid mse 0.6968
+| end of epoch  81 | time:  2.77s | train_loss 0.3525 | valid mse 0.6620
+| end of epoch  82 | time:  2.75s | train_loss 0.3325 | valid mse 0.6269
+| end of epoch  83 | time:  2.81s | train_loss 0.3315 | valid mse 0.6109
+| end of epoch  84 | time:  2.74s | train_loss 0.3151 | valid mse 0.6145
+| end of epoch  85 | time:  2.71s | train_loss 0.3337 | valid mse 0.7679
+| end of epoch  86 | time:  2.70s | train_loss 0.3439 | valid mse 0.7119
+| end of epoch  87 | time:  2.72s | train_loss 0.3988 | valid mse 0.9005
+| end of epoch  88 | time:  2.71s | train_loss 0.3319 | valid mse 0.7522
+| end of epoch  89 | time:  2.74s | train_loss 0.3142 | valid mse 0.6607
+| end of epoch  90 | time:  2.72s | train_loss 0.2947 | valid mse 0.6695
+| end of epoch  91 | time:  2.71s | train_loss 0.3118 | valid mse 0.5890
+| end of epoch  92 | time:  2.73s | train_loss 0.2974 | valid mse 0.6095
+| end of epoch  93 | time:  2.70s | train_loss 0.2754 | valid mse 0.6773
+| end of epoch  94 | time:  2.74s | train_loss 0.2914 | valid mse 0.5894
+| end of epoch  95 | time:  2.97s | train_loss 0.2681 | valid mse 0.7620
+| end of epoch  96 | time:  3.01s | train_loss 0.2768 | valid mse 0.6296
+| end of epoch  97 | time:  2.99s | train_loss 0.2669 | valid mse 0.8162
+| end of epoch  98 | time:  3.01s | train_loss 0.2567 | valid mse 0.9580
+| end of epoch  99 | time:  3.01s | train_loss 0.2685 | valid mse 0.6604
+| end of epoch 100 | time:  3.00s | train_loss 0.2566 | valid mse 0.7356
+MAE  :
+horizon-0  :  0.38577815890312195
+all  :  0.38577815890312195
+MSE  :
+horizon-0  :  0.4020969569683075
+all  :  0.4020969569683075
+RMSE  :
+horizon-0  :  0.6341111660003662
+all  :  0.6341111660003662
+masked_MAPE  :
+horizon-0  :  215106600.0
+all  :  215106600.0
+StemGNN_MAPE  :
+horizon-0  :  310.8156311158184
+all  :  310.8156311158184
+PCC  :
+horizon-0  :  0.8600125909365386
+all  :  0.8600125909365386
+node_wise_PCC  :
+horizon-0  :  0.46605390310287476
+all  :  0.46605390310287476

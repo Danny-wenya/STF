@@ -1,0 +1,14 @@
+{
+  "filename": "raw_data/CITYFLOW/trained_data_sample.npz",
+  "adj_type": "connectivity", 
+  "//": "adj_type be  distance or connectivity",
+  "adj_filename": "raw_data/CITYFLOW/adj_24.pkl",
+  "input_dim": 2,
+  "output_dim": 1,
+  "seq_len": 1200,
+  "num_nodes": 24,
+  "train_rate": 0.6,
+  "eval_rate": 0.2,
+  "feature_dim": 2,
+  "mask": false
+}

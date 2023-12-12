@@ -1,0 +1,42 @@
+{
+    "device": "cuda:0",
+    "gpu": true,
+    "gpu_id": 1,
+    "save": true,
+    "cuda": true,
+  
+    "normalize": 0,
+    "window": 12,
+    "horizon": 1,
+    "batch_size": 32,
+    "order": 1,
+    "lag": 12,
+    "period": 180,
+    "sparsity": 0.01,
+  
+    "hidden_dims": [[64,64,64], [64,64,64], [64,64,64]],  
+    "first_layer_embedding_size": 64,  
+    "out_layer_dim": 128,  
+    "strides": 4,
+    "temporal_emb": true,
+    "spatial_emb": true,
+    "activation": "GLU",
+    "module_type": "individual",
+    "//": ["individual", "sharing"],
+
+    "train_loss": "mse",
+    "clip": 10,
+    "epochs": 500,
+    "seed": 54321,
+    "log_interval": 2000,
+    "optim": "adam",
+    "lr": 0.000001,
+    "patience": 30,
+    "lr_decay": true,
+    "lr_scheduler": "multisteplr",
+    "lr_decay_ratio": 0.8,
+    "lr_decay_steps":  [5, 10,20,30,40,50],
+    "step_size": 10,
+    "model_cache_file": "cache/evaluate_cache/best.pt"
+  }
+  
